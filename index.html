@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Boy Social Media Booster | Fast • Secure • Affordable</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(0,0,0,0.3);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    h1, h2 { text-align: center; }
+    .packages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    .package {
+      background: white;
+      color: #333;
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .popular {
+      border: 3px solid #ff9800;
+      transform: scale(1.05);
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover { background: #45a049; }
+    form {
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .bank-details {
+      background: #fff;
+      color: #333;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 25px 0;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Social Media Booster</h1>
+    <p style="text-align:center; font-size:22px;"><strong>Fast • Secure • Affordable</strong></p>
+
+    <h2>Our Packages</h2>
+    <div class="packages">
+      <!-- Basic -->
+      <div class="package">
+        <h3>Basic</h3>
+        <h2>₦6,200</h2>
+        <p>1,000 Followers/Likes<br>+ 5,000 Views</p>
+        <button onclick="document.getElementById('confirm-section').scrollIntoView({behavior:'smooth'})">Choose Basic</button>
+      </div>
+
+      <!-- Standard (Popular) -->
+      <div class="package popular">
+        <h3>Standard 🔥</h3>
+        <h2>₦600</h2>
+        <p>1,000 Likes<br>+ 3,000 Views</p>
+        <button onclick="document.getElementById('confirm-section').scrollIntoView({behavior:'smooth'})">Choose Standard</button>
+      </div>
+
+      <!-- Premium -->
+      <div class="package">
+        <h3>Premium</h3>
+        <h2>$50</h2>
+        <p>premier user<br>Fast Delivery + Priority</p>
+        <button onclick="document.getElementById('confirm-section').scrollIntoView({behavior:'smooth'})">Choose Premium</button>
+      </div>
+    </div>
+
+    <h2>Supported Platforms</h2>
+    <p style="text-align:center; font-size:18px;">
+      Instagram • TikTok • YouTube
+    </p>
+
+    <!-- Bank Details -->
+    <div class="bank-details">
+      <h2>Payment Information</h2>
+      <p><strong>Bank:</strong> OPAY</p>
+      <p><strong>Account Number:</strong> <strong>8103397413</strong></p>
+      <p><strong>Account Name:</strong> ABDULMAJEED YUNUSA ALIYU</p>
+      <p><strong>After making payment, kindly fill the form below.</strong></p>
+    </div>
+
+    <!-- Confirmation Form -->
+    <h2 id="confirm-section">Confirm Payment</h2>
+    <form action="https://formsubmit.co/abdulmajeedyunusaaliyu@gmail.com" method="POST">
+      <input type="text" name="full_name" placeholder="Your Full Name" required>
+      
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      
+      <input type="text" name="username" placeholder="Instagram / TikTok / YouTube Username" required>
+      
+      <select name="platform" required>
+        <option value="">Select Platform</option>
+        <option value="Instagram">Instagram</option>
+        <option value="TikTok">TikTok</option>
+        <option value="YouTube">YouTube</option>
+      </select>
+      
+      <select name="package" required>
+        <option value="">Select Package</option>
+        <option value="Basic">Basic (₦6,200)</option>
+        <option value="Standard">Standard (₦600)</option>
+        <option value="Premium">Premium ($50)</option>
+      </select>
+      
+      <input type="number" name="amount_paid" placeholder="Amount Paid (₦)" required>
+      
+      <input type="text" name="transaction_ref" placeholder="Transaction Reference / Teller No." required>
+      
+      <textarea name="additional_info" rows="3" placeholder="Additional Information (optional)"></textarea>
+      
+      <label>Upload Payment Proof (Screenshot):</label>
+      <input type="file" name="attachment" accept="image/*">
+      
+      <input type="hidden" name="_subject" value="New Payment Confirmation - Social Media Booster">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://generalbot0001.github.io/my-awesome-project/thanks.html">
+      <input type="hidden" name="_autoresponse" value="Thank you! Your payment confirmation has been received. We will process your order shortly.">
+      
+      <button type="submit" style="width:100%; padding:15px; font-size:18px;">Submit Payment Confirmation</button>
+    </form>
+
+    <p style="text-align:center; margin-top:25px;">
+      <strong>Telegram:</strong> <a href="https://t.me/verifiedschoolboy" style="color:#fff;">@verifiedschoolboy</a>
+    </p>
+  </div>
+</body>
+  </html>
