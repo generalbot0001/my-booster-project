@@ -1,171 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Boy Social Media Booster | Fast • Secure • Affordable</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: rgba(0,0,0,0.3);
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-    h1, h2 { text-align: center; }
-    .packages {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin: 30px 0;
-    }
-    .package {
-      background: white;
-      color: #333;
-      padding: 20px;
-      border-radius: 12px;
-      width: 280px;
-      text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    .popular {
-      border: 3px solid #ff9800;
-      transform: scale(1.05);
-    }
-    button {
-      background: #4CAF50;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    button:hover { background: #45a049; }
-    form {
-      background: rgba(255,255,255,0.1);
-      padding: 25px;
-      border-radius: 12px;
-      margin-top: 30px;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-    .bank-details {
-      background: #fff;
-      color: #333;
-      padding: 20px;
-      border-radius: 12px;
-      margin: 25px 0;
-      text-align: center;
-      font-size: 18px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Boy - Social Media Boosting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <h1>Social Media Booster</h1>
-    <p style="text-align:center; font-size:22px;"><strong>Fast • Secure • Affordable</strong></p>
+<body class="bg-white text-gray-900 font-sans">  <!-- Navbar -->  <header class="bg-[#060816] text-white px-6 py-5 border-b border-white/10 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-bold text-purple-400">BoostWave</h1>
+        <p class="text-sm text-gray-400">Social Media Growth Platform</p>
+      </div><nav class="hidden md:flex gap-8 text-sm font-medium">
+    <a href="#" class="hover:text-purple-400">Home</a>
+    <a href="#services" class="hover:text-purple-400">Services</a>
+    <a href="#how" class="hover:text-purple-400">How It Works</a>
+    <a href="#pricing" class="hover:text-purple-400">Pricing</a>
+    <a href="#contact" class="hover:text-purple-400">Contact</a>
+  </nav>
 
-    <h2>Our Packages</h2>
-    <div class="packages">
-      <!-- Basic -->
-      <div class="package">
-        <h3>Basic</h3>
-        <h2>₦6,200</h2>
-        <p>1,000 Followers/Likes<br>+ 5,000 Views</p>
-        <button onclick="document.getElementById('confirm-section').scrollIntoView({behavior:'smooth'})">Choose Basic</button>
-      </div>
-
-      <!-- Standard (Popular) -->
-      <div class="package popular">
-        <h3>Standard 🔥</h3>
-        <h2>₦600</h2>
-        <p>1,000 Likes<br>+ 3,000 Views</p>
-        <button onclick="document.getElementById('confirm-section').scrollIntoView({behavior:'smooth'})">Choose Standard</button>
-      </div>
-
-      <!-- Premium -->
-      <div class="package">
-        <h3>Premium</h3>
-        <h2>$50</h2>
-        <p>premier user<br>Fast Delivery + Priority</p>
-        <button onclick="document.getElementById('confirm-section').scrollIntoView({behavior:'smooth'})">Choose Premium</button>
-      </div>
-    </div>
-
-    <h2>Supported Platforms</h2>
-    <p style="text-align:center; font-size:18px;">
-      Instagram • TikTok • YouTube
-    </p>
-
-    <!-- Bank Details -->
-    <div class="bank-details">
-      <h2>Payment Information</h2>
-      <p><strong>Bank:</strong> OPAY</p>
-      <p><strong>Account Number:</strong> <strong>8103397413</strong></p>
-      <p><strong>Account Name:</strong> ABDULMAJEED YUNUSA ALIYU</p>
-      <p><strong>After making payment, kindly fill the form below.</strong></p>
-    </div>
-
-    <!-- Confirmation Form -->
-    <h2 id="confirm-section">Confirm Payment</h2>
-    <form action="https://formsubmit.co/abdulmajeedyunusaaliyu@gmail.com" method="POST">
-      <input type="text" name="full_name" placeholder="Your Full Name" required>
-      
-      <input type="email" name="email" placeholder="Your Email Address" required>
-      
-      <input type="text" name="username" placeholder="Instagram / TikTok / YouTube Username" required>
-      
-      <select name="platform" required>
-        <option value="">Select Platform</option>
-        <option value="Instagram">Instagram</option>
-        <option value="TikTok">TikTok</option>
-        <option value="YouTube">YouTube</option>
-      </select>
-      
-      <select name="package" required>
-        <option value="">Select Package</option>
-        <option value="Basic">Basic (₦6,200)</option>
-        <option value="Standard">Standard (₦600)</option>
-        <option value="Premium">Premium ($50)</option>
-      </select>
-      
-      <input type="number" name="amount_paid" placeholder="Amount Paid (₦)" required>
-      
-      <input type="text" name="transaction_ref" placeholder="Transaction Reference / Teller No." required>
-      
-      <textarea name="additional_info" rows="3" placeholder="Additional Information (optional)"></textarea>
-      
-      <label>Upload Payment Proof (Screenshot):</label>
-      <input type="file" name="attachment" accept="image/*">
-      
-      <input type="hidden" name="_subject" value="New Payment Confirmation - Social Media Booster">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://generalbot0001.github.io/my-awesome-project/">
-      <input type="hidden" name="_autoresponse" value="Thank you! Your payment confirmation has been received. We will process your order shortly.">
-      
-      <button type="submit" style="width:100%; padding:15px; font-size:18px;">Submit Payment Confirmation</button>
-    </form>
-
-    <p style="text-align:center; margin-top:25px;">
-      <strong>Telegram:</strong> <a href="https://t.me/verifiedschoolboy" style="color:#fff;">@verifiedschoolboy</a>
-    </p>
+  <div class="flex gap-3">
+    <button class="border border-purple-500 px-5 py-2 rounded-xl hover:bg-purple-500/20">
+      Login
+    </button>
+    <button class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-xl">
+      Sign Up
+    </button>
   </div>
-</body>
-  </html>
+</div>
+
+  </header>  <!-- Hero -->  <section class="bg-gradient-to-br from-[#050816] via-[#0b1028] to-[#1a1040] text-white px-6 py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm inline-block mb-6 border border-purple-500/20">
+          Fast • Safe • Reliable
+        </span><h2 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+      Boost Your Social Media Presence
+    </h2>
+
+    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+      Grow your followers, increase engagement, and build credibility with premium social media boosting services.
+    </p>
+
+    <div class="flex flex-wrap gap-4 mb-10">
+      <button class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-2xl text-lg font-semibold">
+        View Services
+      </button>
+
+      <button class="border border-white/20 hover:bg-white/10 px-8 py-4 rounded-2xl text-lg">
+        How It Works
+      </button>
+    </div>
+
+    <div class="grid grid-cols-3 gap-6 text-center">
+      <div>
+        <h3 class="text-3xl font-bold text-purple-400">50K+</h3>
+        <p class="text-gray-400 text-sm">Happy Clients</p>
+      </div>
+
+      <div>
+        <h3 class="text-3xl font-bold text-purple-400">200K+</h3>
+        <p class="text-gray-400 text-sm">Orders Delivered</p>
+      </div>
+
+      <div>
+        <h3 class="text-3xl font-bold text-purple-400">24/7</h3>
+        <p class="text-gray-400 text-sm">Support Team</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative flex justify-center">
+    <div class="bg-gradient-to-br from-purple-600 to-indigo-700 w-[320px] h-[620px] rounded-[50px] shadow-2xl p-6 border border-white/10">
+      <div class="bg-black/30 rounded-3xl h-full flex flex-col justify-center items-center text-center backdrop-blur">
+        <div class="text-8xl mb-6">🚀</div>
+        <h3 class="text-4xl font-bold mb-4">Get Noticed</h3>
+        <p class="text-gray-300 leading-relaxed px-6">
+          Boost engagement and reach more people across all social platforms.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>  <!-- Services -->  <section id="services" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-purple-600 font-semibold uppercase tracking-widest mb-3">
+        Our Services
+      </p><h2 class="text-5xl font-black mb-16">Boost Any Platform</h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition">
+      <div class="text-6xl mb-6">📸</div>
+      <h3 class="text-2xl font-bold mb-3">Instagram</h3>
+      <p class="text-gray-600 text-sm mb-6">Followers, Likes & Reels</p>
+      <button class="w-full bg-purple-600 text-white py-3 rounded-xl">View Services</button>
+    </div>
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition">
+      <div class="text-6xl mb-6">🎵</div>
+      <h3 class="text-2xl font-bold mb-3">TikTok</h3>
+      <p class="text-gray-600 text-sm mb-6">Followers, Likes & Views</p>
+      <button class="w-full bg-purple-600 text-white py-3 rounded-xl">View Services</button>
+    </div>
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition">
+      <div class="text-6xl mb-6">▶️</div>
+      <h3 class="text-2xl font-bold mb-3">YouTube</h3>
+      <p class="text-gray-600 text-sm mb-6">Subscribers & Watch Time</p>
+      <button class="w-full bg-purple-600 text-white py-3 rounded-xl">View Services</button>
+    </div>
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition">
+      <div class="text-6xl mb-6">✖️</div>
+      <h3 class="text-2xl font-bold mb-3">Twitter (X)</h3>
+      <p class="text-gray-600 text-sm mb-6">Retweets & Impressions</p>
+      <button class="w-full bg-purple-600 text-white py-3 rounded-xl">View Services</button>
+    </div>
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition">
+      <div class="text-6xl mb-6">📘</div>
+      <h3 class="text-2xl font-bold mb-3">Facebook</h3>
+      <p class="text-gray-600 text-sm mb-6">Followers & Engagement</p>
+      <button class="w-full bg-purple-600 text-white py-3 rounded-xl">View Services</button>
+    </div>
+
+  </div>
+</div>
+
+  </section>  <!-- How it works -->  <section id="how" class="py-24 px-6 bg-white">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+      <div>
+        <p class="text-purple-600 font-semibold uppercase tracking-widest mb-3">
+          How It Works
+        </p><h2 class="text-5xl font-black mb-10">Start Growing In 3 Steps</h2>
+
+    <div class="space-y-8">
+      <div class="flex gap-5">
+        <div class="w-14 h-14 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-2xl font-bold">1</div>
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Choose A Service</h3>
+          <p class="text-gray-600">Pick the platform and package you want.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-5">
+        <div class="w-14 h-14 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-2xl font-bold">2</div>
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Complete Checkout</h3>
+          <p class="text-gray-600">Enter your username or post link securely.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-5">
+        <div class="w-14 h-14 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-2xl font-bold">3</div>
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Watch Your Growth</h3>
+          <p class="text-gray-600">Get followers, likes, and engagement quickly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-100 rounded-[40px] p-8 shadow-inner">
+    <div class="bg-white rounded-3xl p-8 shadow-lg">
+      <h3 class="text-3xl font-bold mb-8">Dashboard Preview</h3>
+
+      <div class="grid grid-cols-2 gap-4 mb-8">
+        <div class="bg-purple-50 p-5 rounded-2xl">
+          <p class="text-gray-500 mb-2">Completed Orders</p>
+          <h4 class="text-3xl font-bold">236</h4>
+        </div>
+
+        <div class="bg-indigo-50 p-5 rounded-2xl">
+          <p class="text-gray-500 mb-2">Balance</p>
+          <h4 class="text-3xl font-bold">$482</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  </section>  <!-- Footer -->  <footer id="contact" class="bg-[#050816] text-white px-6 py-16">
+    <div class="max-w-7xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-purple-400 mb-4">BoostWave</h3>
+      <p class="text-gray-400 mb-6">
+        Fast, safe and reliable social media boosting services.
+      </p><div class="flex justify-center gap-6 mb-8 text-gray-400">
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+    <a href="#">YouTube</a>
+    <a href="#">Twitter</a>
+  </div>
+
+  <p class="text-gray-500 text-sm">
+    © 2026 BoostWave. All rights reserved.
+  </p>
+</div>
+
+  </footer></body>
+      </html>
